@@ -1,0 +1,13 @@
+{
+  "name": "opencode-app-workflow-team",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "tui": "./tui.tsx"
+  },
+  "dependencies": {
+    "@opentui/solid": "0.6.6",
+    "solid-js": "1.9.15"
+  }
+}
