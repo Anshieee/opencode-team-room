@@ -7,7 +7,7 @@ An OpenCode TUI plugin for joining a teammate's OpenCode session from your own w
 Requirements: OpenCode **2.1.3**, Python **3.11+**, Bun, Git, and OpenSSL. Each teammate installs it on their own laptop. The installer creates a private Python environment, adds the plugin to OpenCode's local plugin directory, and leaves provider credentials and OpenCode settings alone.
 
 ```sh
-bash -o pipefail -c 'curl -fsSL https://raw.githubusercontent.com/Anshieee/opencode-team-room/v0.1.0/install.sh | bash'
+bash -o pipefail -c 'curl -fsSL https://raw.githubusercontent.com/Anshieee/opencode-team-room/v0.1.1/install.sh | bash'
 ```
 
 Restart OpenCode, then run `/team-room` or choose **Team workspace** from the command palette.
@@ -15,7 +15,7 @@ Restart OpenCode, then run `/team-room` or choose **Team workspace** from the co
 To update an installation managed by this project:
 
 ```sh
-bash -o pipefail -c 'curl -fsSL https://raw.githubusercontent.com/Anshieee/opencode-team-room/v0.1.0/install.sh | bash -s -- --update'
+bash -o pipefail -c 'curl -fsSL https://raw.githubusercontent.com/Anshieee/opencode-team-room/v0.1.1/install.sh | bash -s -- --update'
 ```
 
 Updates are refused if the installed plugin or helper files changed. The old plugin is copied to `~/.local/share/opencode-team-room/backups/` before replacement. Each published version has its own runtime directory.
